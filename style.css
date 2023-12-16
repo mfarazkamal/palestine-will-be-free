@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    max-height: 100%;
+    width: 100%;
+    background-image: url(al\ aqsa\ wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+#overlay-main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.7);
+    position: absolute;
+    z-index: -10;
+}
+
+#navbar{
+    height: 15%;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    border-radius: 100px;
+    box-shadow: 0.25px 0.25px 5px black;
+}
+
+#part1{
+    height: 100vh;
+    width: 30%; 
+    /* background-color: coral;   */
+}
+
+#part2{
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1608980251313-e928d75671c0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    width: 60%; 
+    background-color: rgb(10, 199, 10); 
+    background-size: cover;
+    background-position: center ;
+    box-shadow: 0.1px 0.1px 5px rgb(56, 55, 55), -0.1px -0.1px 5px rgb(56, 55, 55); 
+}
+
+#overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.8);
+}
+
+#part3{
+    height: 100vh;
+    width: 10%; 
+    /* background-color: rgb(23, 89, 232);   */
+}
+
+#text-div{
+    /* height: 300px; */
+    position: absolute;
+    width: 700px;
+    /* background-color: white; */
+    left: 34%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#text-div h1{
+    font-size: 60px;
+    line-height: 70px;
+    color: white;
+    letter-spacing: 5px;
+    font-family: "Poppins", "Arial", "Sans-serif";
+    font-weight: 900px;
+    text-shadow: 1px 1px 3px rgb(121, 119, 119);
+
+}
+
+#small-img-div{
+    height: 300px;
+    width: 300px;
+    background-color: brown;
+    position: relative;
+    top: 200px;
+    right: 17%;
+    transform: translate(-10%,-10%);
+    background-image: url(https://images.unsplash.com/photo-1687788267234-cc0713b98102?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px     rgb(46, 45, 45), -0.25px -0.25px 3px rgba(255, 255, 255, 0.509)
+}
+
+#vertical-text{
+    position: absolute;
+    /* width: 100%;    */
+    /* background-color: white;  */
+    top: 10%;
+    right: 17%;
+}
+
+#vertical-text h1{
+    font-size: 60px;
+    font-family: "Poppins", "Arial", "Sans-serif";
+    font-weight: 900px;
+    writing-mode: vertical-lr;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+}
+
+@keyframes palestine{
+    from{font-size: 60px }
+    to {font-size: 80px;}
+}
+
+.animate{
+    text-shadow: 2px 2px 5px red;
+    animation-name: palestine;
+    animation-duration: 5s;
+}
+
+#footer{
+    position: absolute;
+    color: white;
+    bottom: 3%;
+    right: 3%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover{
+    color: yellow;
+    cursor: pointer;
+    text-decoration: underline;
+}
